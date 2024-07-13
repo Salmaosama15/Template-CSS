@@ -1,0 +1,193 @@
+body {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 5px;
+}
+.firstpic {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+nav {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: normal;
+  align-items: right;
+  padding: auto;
+  margin: 3px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 7px;
+  margin: 0px;
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+nav a {
+  color: rgb(33, 35, 36);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: grey;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 5px 25px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  z-index: 100;
+}
+.logo {
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  font-weight: 200;
+  margin: 10px 20px 10px 40px;
+}
+.projectphotos {
+  position: relative;
+  display: inline-block;
+  width: calc(25% - 20px); /* Set section width with margin calculation */
+  margin: 10px; /* Add margin between sections */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+}
+.project-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin-bottom: 10px; /* Add space below image */
+}
+.textoverlay {
+  position: absolute; /* Position the text absolutely within the container */
+  top: 50%; /* Center the text vertically */
+  left: 50%; /* Center the text horizontally */
+  transform: translate(-100%, -400%); /* Fine-tune centering */
+  color: white; /* Set text color (optional) */
+  background-color: rgb(0, 0, 0);
+}
+main {
+  display: flex;
+  flex-wrap: wrap; /* Allow sections to wrap for responsiveness */
+  justify-content: space-between; /* Distribute sections evenly */
+  margin: auto; /* Center the container horizontally */
+  max-width: 1000px; /* Limit container width on larger screens */
+  padding: 20px;
+}
+@media only screen and (max-width: 768px) {
+  /* Make project sections stack vertically on small screens */
+  main {
+    flex-direction: column;
+  }
+}
+
+.project-image {
+  width: 100%; /* Make images take full width of their container */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin-bottom: 10px; /* Add space below image */
+}
+.teams {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-section {
+  display: flex; /* Allow stacking elements vertically */
+  flex-direction: row; /* Stack elements top to bottom */
+  align-items: center; /* Center elements horizontally within the section */
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the section horizontally on the page */
+  padding: 20px; /* Add some padding for aesthetics */
+}
+.about-section h2 {
+  margin-bottom: 15px; /* Add space between heading and text */
+  text-align: center; /* Center the text horizontally */
+}
+
+.about-section p {
+  margin-bottom: 20px; /* Add space between text and image */
+}
+
+.about-section img {
+  max-width: 100%; /* Allow image to adapt to section width */
+  height: auto; /* Maintain image aspect ratio */
+}
+
+/* Responsive media queries (adjust styles for smaller screens) */
+@media only screen and (max-width: 768px) {
+  /* Make elements stack vertically on small screens */
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-section img {
+    margin-bottom: 10px; /* Adjust spacing for smaller screens */
+  }
+}
+.contact-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow sections to wrap for responsiveness */
+  justify-content: space-between; /* Distribute sections evenly */
+  margin: 0 auto; /* Center the container horizontally */
+  max-width: 800px; /* Adjust width as needed */
+  padding: 20px;
+}
+
+.contact-info,
+.contact-form {
+  width: calc(
+    50% - 20px
+  ); /* Set width for each section with margin calculation */
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+}
+
+.contact-form label {
+  display: block; /* Display labels on separate lines */
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  height: 100px; /* Set a height for the textarea */
+}
+
+.contact-form button {
+  background-color: #4caf50; /* Green button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px; /* Rounded corners for button */
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+.map {
+  background-size: cover;
+}
